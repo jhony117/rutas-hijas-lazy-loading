@@ -8,14 +8,14 @@ import { HeroPageComponent } from './pages/hero-page/hero-page.component';
 
 const routes: Routes = [
   {
-    //localhost:4200/auth/
+    //localhost:4200/heroes/
     path: '',
     component: LayautPageComponent,
     children:[
       {path : 'new-hero', component:NewPageComponent},
       {path : 'search', component:ShearchPageComponent},
-      {path : 'edit/:id', component:NewPageComponent},
       {path : 'list', component:ListPageComponent},
+      {path : 'edit/:id', component:NewPageComponent},
       {path : ':id', component:HeroPageComponent}, //* los comodiens se colocan siempre al ultimo
       {path : '**', redirectTo: 'list'},
     ]
