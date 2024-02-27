@@ -7,6 +7,7 @@ import { LayaoutPageComponent } from './pages/layaout-page/layaout-page.componen
 import { ListPageComponent } from './pages/list-page/list-page.component';
 import { NewPageComponent } from './pages/new-page/new-page.component';
 import { ShearchPageComponent } from './pages/shearch-page/shearch-page.component';
+import { MaterialModule } from '../material/material.module';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ShearchPageComponent } from './pages/shearch-page/shearch-page.componen
   ],
   imports: [
     CommonModule,
-    HeroesRoutingModule
+    HeroesRoutingModule,
+    MaterialModule,
   ]
 })
 export class HeroesModule { }
