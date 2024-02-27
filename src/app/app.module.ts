@@ -5,21 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-// import { Error404PageComponent } from './shared/pages/error404-page/error404-page.component';
+import { Error404PageComponent } from './shared/pages/error404-page/error404-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    // Error404PageComponent
+   Error404PageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+   // SharedModule
   ],
   providers: [
-    provideClientHydration(),
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
   ],
   bootstrap: [AppComponent]
 })
